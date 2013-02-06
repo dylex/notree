@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="net.dylex.notree"
+      android:versionCode="1"
+      android:versionName="0.1">
+      <application android:label="Notree" android:icon="@drawable/app_notree">
+	      <activity android:name="Notree">
+		      <intent-filter>
+			      <action android:name="android.intent.action.MAIN" />
+			      <category android:name="android.intent.category.LAUNCHER" />
+		      </intent-filter>
+		      <intent-filter>
+			      <action android:name="android.intent.action.VIEW" />
+			      <action android:name="android.intent.action.PICK" />
+			      <category android:name="android.intent.category.DEFAULT" />
+		      </intent-filter>
+	      </activity>
+	      <activity android:name="NotreeEdit">
+		      <intent-filter>
+			      <action android:name="android.intent.action.EDIT" />
+			      <category android:name="android.intent.category.DEFAULT" />
+		      </intent-filter>
+	      </activity>
+      </application>
+      <uses-sdk android:targetSdkVersion="6" android:minSdkVersion="4"/>
+</manifest> 
